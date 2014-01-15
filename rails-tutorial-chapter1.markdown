@@ -53,7 +53,7 @@ rails 很多时候会有一些看起来如同“魔法”一般的特性（例�
 》by Peter Cooper.这书基本和本教材保持了一致的结构。我同样建议你阅读[The Ruby Way ](http://www.amazon.com/gp/product/0672328844/ref=as_li_ss_tl?ie=UTF8&tag=httpwwwrailst-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=0672328844)
 最后作为一个资深的rails开发者我觉得你还应该阅读 《The Rails 3 Way》 by Obie Fernandez.
 
-**对于网络开发来说**，即使是一个看起来简单的小应用也会做起来很复杂。如果你确实对于web编程感到头疼并却感觉这个教材是那么的无法逾越。那么恐怕你还没又做好网站制作的准备。你最好多学学HTML和CSS然后在开始这个教程。（不好意思，我并没有什么关于HTML的个人推荐，但是《Head First HTML》貌似值得一学，关于CSS你可以尝试：《CSS ：THE MISS MANUAL》by David Sawyer McFarland）。我也推荐你先去阅读一下《Beginning Ruby》的前几章，那些短小的程序可以让你迅速找到感觉。
+**对于网络开发来说**，即使是一个看起来简单的小应用也会做起来很复杂。如果你确实对于web编程感到头疼并却感觉这个教材是那么的无法逾越。那么恐怕你还没有做好网站制作的准备。你最好多学学HTML和CSS然后再开始这个教程。（不好意思，我并没有什么关于HTML的个人推荐，但是《Head First HTML》貌似值得一学，关于CSS你可以尝试：《CSS ：THE MISS MANUAL》by David Sawyer McFarland）。我也推荐你先去阅读一下《Beginning Ruby》的前几章，那些短小的程序可以让你迅速找到感觉。
 
 **对于web开发新手但是经验丰富的编程人员**：你的经验可能已经帮助你明白了像：类，方法，数据结构的概念。这是你的优势。另外如果你原先用的是C++或者java，你可能发现Ruby a bit of an odd duck(估计是有点讨厌的意思。。。)。你可能需要一些时间来适应它。常用ruby，你将会适应并且喜欢上它的。（Ruby 甚至同意让你在句末加上分号。。。）Rails Tutorial 包含了所有的web专有概念，所以如果你不懂**PUT**和**POST**你可以完全不用担心。
 
@@ -72,7 +72,7 @@ rails 很多时候会有一些看起来如同“魔法”一般的特性（例�
 
 ####1.1.2 “Scaling”(谁知道怎么翻译？)的rails
 
-在开始我们的教程之前我想要花一点时间来纠正一个多年来关于rails框架的最常见的问题：rails能不能去“架构“一个大型网站。我觉得关于这个问题你们有一些误区：[你架构的是一个网站，不是一个框架](http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/).而rails再牛逼也就是一个框架而已。所以你们真正想问的恐怕应该是：“大流量的网站能够用否rails框架来搭建？“。而如今，我想这个问题应该能够被很确定的回答：世界上某些流量最大的网站就是用rails搭建的！实施上做一个架构需要的东西远远不只是rails但是如果你确定你能够作出一个像Hulu,Yellow Pages那样的大型网站的话，我想rails是不会阻止你去颠覆世界的～！
+在开始我们的教程之前我想要花一点时间来纠正一个多年来关于rails框架的最常见的问题：rails能不能去“架构“一个大型网站。我觉得关于这个问题你们有一些误区：[你架构的是一个网站，不是一个框架](http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/).而rails再牛逼也就是一个框架而已。所以你们真正想问的恐怕应该是：“大流量的网站能够用否rails框架来搭建？“。而如今，我想这个问题应该能够被很确定的回答：世界上某些流量最大的网站就是用rails搭建的！事实上做一个架构需要的东西远远不只是rails但是如果你确定你能够作出一个像Hulu,Yellow Pages那样的大型网站的话，我想rails是不会阻止你去颠覆世界的～！
 
 ####1.1.3 关于本书的标准约定
 
@@ -120,7 +120,7 @@ Rails现在也可以作为一个命令来运行了,例如我们在1.2.5就会运
 
 我会简写成`config/routes.rb`.
 
-最后，Rails Rutorial 常常会输出不同的程序和文件，由于不同的计算机系统可能大家看到的又些许区别，但是这没有问题。另外，有意写命令可能由于你的计算机系统会产生错误信息，与其去一点一点的分析[Sisyphean](http://en.wikipedia.org/wiki/Sisyphus)错误日志，我觉得直接"Google 一下"回事更好的方法，这也将成为你在实践部署中的宝贵经验。
+最后，Rails Rutorial 常常会输出不同的程序和文件，由于不同的计算机系统可能大家看到的有些许区别，但是这没有问题。另外，有一些命令可能由于你的计算机系统会产生错误信息，与其去一点一点的分析[Sisyphean](http://en.wikipedia.org/wiki/Sisyphus)错误日志，我觉得直接"Google 一下"会是更好的方法，这也将成为你在实践部署中的宝贵经验。
 
 ###  1.2   让它跑起来
 
@@ -152,15 +152,15 @@ rails并不缺少支持 rails 的 IDE，有：[RadRails](http://www.aptana.com/r
 
 **浏览器**
 
-虽然你有许许多多的浏览器可以选择，但是大部分的rails开发者来说他们用的都是 [Firefox](http://getfirebug.com/) ,Safari ,和 Chrome 来进行开发。这份教材的rails截图都将来自与 FireFox。另外，如果你也用 [Firefox](http://getfirebug.com/) 那么我强烈建议你用 Firebug 火狐插件。这可一让你的平台神奇的把所有的 HTML 和 CSS 语法都展现在你的页面上。 对于那些不用火狐的人来说 Firebug Lite 也对大部分浏览器有效。另外对于 大部分浏览器，包括 Safiri 和 Chrome 都有在右键内嵌的 “Inspect element” 功能。
+虽然你有许许多多的浏览器可以选择，但是大部分的rails开发者来说他们用的都是 [Firefox](http://getfirebug.com/) ,Safari ,和 Chrome 来进行开发。这份教材的rails截图都将来自于 FireFox。另外，如果你也用 [Firefox](http://getfirebug.com/) 那么我强烈建议你用 Firebug 火狐插件。这可以让你的平台神奇的把所有的 HTML 和 CSS 语法都展现在你的页面上。 对于那些不用火狐的人来说 Firebug Lite 也对大部分浏览器有效。另外对于 大部分浏览器，包括 Safiri 和 Chrome 都有在右键内嵌的 “Inspect element” 功能。
 
 **关于工具的注意事项**
 
-在开动我们的开发之前，你可能要花费很多时间在准备工作上。学着使用编辑器和IDE是一件漫长的事情——我是说你完全可以在 TextMate 和 Vim 上琢磨上一个星期。如果你是一个新手，那么我希望你能 坚持的使用这些工具，每个人都有这个过程。虽然有时候这让人沮丧，虽然当你脑子里面又一个超级cool的点子和设计的时候 却只能坐在这里学 rails 的工具很烦，但是我想花一个星期去琢磨你的文本编辑器会使一个划得来的交易。去理解那些工具，他会给你带来奇迹般的效率的。
+在开动我们的开发之前，你可能要花费很多时间在准备工作上。学着使用编辑器和IDE是一件漫长的事情——我是说你完全可以在 TextMate 和 Vim 上琢磨上一个星期。如果你是一个新手，那么我希望你能 坚持的使用这些工具，每个人都有这个过程。虽然有时候这让人沮丧，虽然当你脑子里面又一个超级cool的点子和设计的时候 却只能坐在这里学 rails 的工具很烦，但是我想花一个星期去琢磨你的文本编辑器会是一个划得来的交易。去理解那些工具，他会给你带来奇迹般的效率的。
 
 ####1.2.2 Ruby,RubyGems,Rails 还有 Git
 
-现在时候来安装 ruby 和 rails 了。最中规中矩的做法是去 [Ruby on Rails download page](http://rubyonrails.org/download) 找一份最新的然后下下来装上。哪里听不错的，有不少可以离线阅读的图书和资源下载，但是在这里我会推荐以下方法
+现在时候来安装 ruby 和 rails 了。最中规中矩的做法是去 [Ruby on Rails download page](http://rubyonrails.org/download) 找一份最新的然后下下来装上。那里挺不错的，有不少可以离线阅读的图书和资源下载，但是在这里我会推荐以下方法
 
 **Rails Installer (Windows)**
 
@@ -179,7 +179,7 @@ rails并不缺少支持 rails 的 IDE，有：[RadRails](http://www.aptana.com/r
 
 来确认你的版本号。Rails需要Ruby1.8.7以上才能工作，推荐版本为1.9.2。这份教材假设大家使用的是1.9.2的版本，不过如果你用的是1.8.7的版本也没什么问题。另外，Windows用户在安装 Rails Installer 1.3.0 会默认搭配上 ruby 1.8.7 。
 
-Ruby 1.9 作出了非常多的改动，所以你想要直接用上最新的Ruby或许有意写困难，如果你喜欢总是能用上最新版本的指令的话，下面的不走是我推荐的于是我现在所使用的方法（在 macintosh OS X上），你可以在网络上找到和你系统配套的命令。
+Ruby 1.9 作出了非常多的改动，所以你想要直接用上最新的Ruby或许有一些困难，如果你喜欢总是能用上最新版本的指令的话，下面的步骤是我推荐的于是我现在所使用的方法（在 macintosh OS X上），你可以在网络上找到和你系统配套的命令。
 
 首先要声明的事，我还是建议你使用 OS X 或者 Linux ，在这两个系统上我强烈推荐你使用 [Ruby版本管理器 RVM](http://rvm.beginrescueend.com/) 来安装管理你的Ruby版本。如果你想在同一机器上运行 Rails 3 和 Rails 2 这是非常重要的，在这里我给出的建议是,安装两套 RoR 版本: Ruby 1.8.7/Rails 2.3 和 Ruby 1.9.2/Rails 3.如果你在运行或者安装RVM的时候出现了问题，你可以在RVM的IRC 频道找到 Wayne E.Swguin报告问题。
 
@@ -209,7 +209,7 @@ Ruby程序通常通过 gems 分布式的进行管理，gems 包自己也包含�
 
 这条命令同时设置的默认的 Ruby 程序和 gem包集合rails3tutorial。
 
-如果你对RVM 感到疑惑的花运行下面这两个命令或许会给你带来帮助
+如果你对RVM 感到疑惑的话运行下面这两个命令或许会给你带来帮助
 
 	$ rvm --help
 	$ rvm gemset --help
@@ -385,7 +385,7 @@ gem 'rails', '3.0.11'
 
 在开发之前，我觉得先从整体上来认识一下rails的结构比较好。注意rails的默认的应用结构 有一个应用文件夹 app/ 其中包含了几个子目录 model , view , controllers . 这意味着rails遵守着一个模型-视图-控制器 [MVC](http://en.wikipedia.org/wiki/Model-view-controller) 设计模式，他将强制性的把管理层（“domain logic” also called “business logic” ）从 展示层（presentation logic）和用户界面（GUI）分离开来。 对于一个网络应用来说，管理层通常包含了例如 用户，文章，产品等等的模型和数据，而 GUI 是对于浏览器来说的一个页面。
 
-对浏览器来说，要访问一个rails应用，浏览器首先会发送一个请求到rails的controllser上面去，controller会决定具体访问的文件或者模型。有时候controller会直接 抛会一个 view ，一个已经转换成 HTML 语言的一个模板页面。对于一个动态网站来说，更常见的是controller会与model（通常是一个ruby对象，类似用户这样的网站元素）交互，model又会和数据库通信，之后controller将这些数据渲染上视图组合成完整的网页抛回给浏览器。
+对浏览器来说，要访问一个rails应用，浏览器首先会发送一个请求到rails的controllser上面去，controller会决定具体访问的文件或者模型。有时候controller会直接 抛回一个 view ，一个已经转换成 HTML 语言的一个模板页面。对于一个动态网站来说，更常见的是controller会与model（通常是一个ruby对象，类似用户这样的网站元素）交互，model又会和数据库通信，之后controller将这些数据渲染上视图组合成完整的网页抛回给浏览器。
 
 ![picture](http://ruby.railstutorial.org/images/figures/mvc_schematic.png)
 
@@ -395,7 +395,7 @@ gem 'rails', '3.0.11'
 
 现在我们已经有了一个rails 程序 我们需要在这里完成一个大部分rails 开发者都认可的步骤————这是可选的————把你的程序放置在版本控制之下。版本控制会让你跟踪你的代码的改变，让合作更佳轻松愉快，并且可以轻松的抹去你的错误操作回滚到过去的代码。所以掌握版本控制是一项软件开发人员必须的技能。
 
-要进行版本控制，又很多选在，但是rails 社区大部分都依赖于 Git ，一个分布式的版本控制工具，是由Linus Torvalds 为了管理 Linux 的内核而开发的。Git 是一个大项目，我们甚至可以为此写出整整一本书来介绍这个软件，我推荐 Scott Chacon 的书 Pro Git (Apress, 2009) .把你的代码都放到Git下面绝对是一个非常不错的选择，你不仅仅可以进行rails项目的开发管理，你还能够与他人共享你的代码并且轻易的将你的项目部署到服务器上面去。
+要进行版本控制，有很多选择，但是rails 社区大部分都依赖于 Git ，一个分布式的版本控制工具，是由Linus Torvalds 为了管理 Linux 的内核而开发的。Git 是一个大项目，我们甚至可以为此写出整整一本书来介绍这个软件，我推荐 Scott Chacon 的书 Pro Git (Apress, 2009) .把你的代码都放到Git下面绝对是一个非常不错的选择，你不仅仅可以进行rails项目的开发管理，你还能够与他人共享你的代码并且轻易的将你的项目部署到服务器上面去。
 ####1.3.1 安装与配置
 
 首先你应该安装git，关于这个步骤这里不再赘述，具体可以看Installing Git section of Pro Git
@@ -425,7 +425,7 @@ gem 'rails', '3.0.11'
 	$ git init
 	Initialized empty Git repository in /Users/mhartl/rails_projects/   first_app/.git/
 
-下一个步骤就是为代码仓库添加上你的项目文件，这个不走可能那么一点复杂，Git会默认得跟踪每一个文件的改变，但是如果有一些文件我们不需要追踪那么多的文件，例如rails会创建一些日志文件来记录应用程序的运作，这些文件变化频繁，没有必要记录，我们也不希望让我们的版本控制中包含进这样的内容。 Git有一个简单的机制来让你忽略到这样的文件：根目录下面包括一个文件叫 .gitgnore ,这个文件记录着Git那些文件需要忽略上传。
+下一个步骤就是为代码仓库添加上你的项目文件，这个步骤可能那么一点复杂，Git会默认得跟踪每一个文件的改变，但是如果有一些文件我们不需要追踪那么多的文件，例如rails会创建一些日志文件来记录应用程序的运作，这些文件变化频繁，没有必要记录，我们也不希望让我们的版本控制中包含进这样的内容。 Git有一个简单的机制来让你忽略到这样的文件：根目录下面包括一个文件叫 .gitgnore ,这个文件记录着Git哪些文件需要忽略上传。
 
 	.bundle
 	db/*.sqlite3
@@ -545,7 +545,7 @@ application_controller.rb
 
 ####1.3.4 GitHub
 
-现在我们应该把我们的项目至于 Git 的版本控制之下了，这时候我们就可以把代码推送到 GitHub 去了，这是一个社会化开源平台来让你共享你的Git 仓库。我们把代码仓库放到 GITHub上面去有两个目的：一个是对我们代码 进行备份，另一个是让代码更容易合作开发。这个步骤是可选的，但是成为一个GitHub 用户将会给你打开参加一个开源项目的大门。
+现在我们应该把我们的项目至于 Git 的版本控制之下了，这时候我们就可以把代码推送到 GitHub 去了，这是一个社会化开源平台来让你共享你的Git 仓库。我们把代码仓库放到 GitHub上面去有两个目的：一个是对我们代码 进行备份，另一个是让代码更容易合作开发。这个步骤是可选的，但是成为一个GitHub 用户将会给你打开参加一个开源项目的大门。
 
 ![github](http://ruby.railstutorial.org/images/figures/github_first_page.png)
 
@@ -589,12 +589,12 @@ Git在建立分支上功能强大，它能够快速有效的创建一个代码�
 
 **编辑**
 
-在建立了一个分支之后我们改修改一下我们的项目描诉文件了。在这里我建议使用 Markdown 标记语法 ,当你使用 .markdown 后缀的时候GitHub会自动识别出来并且转换成正确的格式。
+在建立了一个分支之后我们改修改一下我们的项目描述文件了。在这里我建议使用 Markdown 标记语法 ,当你使用 .markdown 后缀的时候GitHub会自动识别出来并且转换成正确的格式。
 
 首先我们要先用 Git版本的 Unix mv命令来更改文件名，然后我们在文件中输入我们需要的内容。
 
-$ git mv README README.markdown
-$ mate README.markdown
+	$ git mv README README.markdown
+	$ mate README.markdown
 
 这个是新的 README.markdown 文件
 
@@ -743,7 +743,7 @@ Heroku 有不少命令，我们不会在这本书里用到多少的。现在我�
 
 ###1.5 结论
 
-我们在这一张里面做了很多：安装，开发环境安装，版本控制和部署，如果你想要分享你自己的心不或者提出一些建议，你可以在twitter 或者 facebook 上发类似的消息
+我们在这一章里面做了很多：安装，开发环境安装，版本控制和部署，如果你想要分享你自己的心得或者提出一些建议，你可以在twitter 或者 facebook 上发类似的消息
 
 I’m learning Ruby on Rails with @railstutorial! http://railstutorial.org/
 
